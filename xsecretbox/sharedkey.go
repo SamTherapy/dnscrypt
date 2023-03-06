@@ -3,7 +3,7 @@ package xsecretbox
 import (
 	"errors"
 
-	"github.com/aead/chacha20/chacha"
+	"golang.org/x/crypto/chacha20"
 	"golang.org/x/crypto/curve25519"
 )
 
@@ -26,6 +26,7 @@ func SharedKey(secretKey [32]byte, publicKey [32]byte) ([32]byte, error) {
 		return sharedKey, errors.New("weak public key")
 	}
 	var nonce [16]byte
-	chacha.HChaCha20(&sharedKey, &nonce, &sharedKey)
-	return sharedKey, nil
+
+	key, err := chacha20.HChaCha20(sharedKey[:], nonce[:])
+	return *(*[32]byte)(key), err
 }
