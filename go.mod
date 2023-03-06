@@ -1,4 +1,4 @@
-module github.com/ameshkov/dnscrypt/v2
+module dns.froth.zone/dnscrypt
 
 go 1.18
 

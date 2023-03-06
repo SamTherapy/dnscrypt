@@ -3,8 +3,8 @@ package main
 import (
 	"os"
 
+	"dns.froth.zone/dnscrypt"
 	"github.com/AdguardTeam/golibs/log"
-	"github.com/ameshkov/dnscrypt/v2"
 	"gopkg.in/yaml.v3"
 )
 

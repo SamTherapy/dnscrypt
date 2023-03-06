@@ -6,8 +6,8 @@ import (
 	"strings"
 	"time"
 
+	"dns.froth.zone/dnscrypt"
 	"github.com/AdguardTeam/golibs/log"
-	"github.com/ameshkov/dnscrypt/v2"
 	"github.com/ameshkov/dnsstamps"
 	"github.com/miekg/dns"
 )

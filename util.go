@@ -6,7 +6,7 @@ import (
 	"net"
 	"strings"
 
-	"github.com/ameshkov/dnscrypt/v2/xsecretbox"
+	"dns.froth.zone/dnscrypt/xsecretbox"
 	"github.com/miekg/dns"
 	"golang.org/x/crypto/nacl/box"
 )

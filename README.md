@@ -1,6 +1,6 @@
-[![Code Coverage](https://img.shields.io/codecov/c/github/ameshkov/dnscrypt/master.svg)](https://codecov.io/github/ameshkov/dnscrypt?branch=master)
-[![Go Report Card](https://goreportcard.com/badge/github.com/ameshkov/dnscrypt)](https://goreportcard.com/report/ameshkov/dnscrypt)
-[![Go Doc](https://godoc.org/github.com/ameshkov/dnscrypt?status.svg)](https://godoc.org/github.com/ameshkov/dnscrypt)
+[![Code Coverage](https://img.shields.io/codecov/c/github/SamTherapy/dnscrypt/master.svg)](https://codecov.io/github/SamTherapy/dnscrypt?branch=master)
+[![Go Report Card](https://goreportcard.com/badge/dns.froth.zone/dnscrypt)](https://goreportcard.com/report/SamTherapy/dnscrypt)
+[![Go Doc](https://godoc.org/dns.froth.zone/dnscrypt?status.svg)](https://godoc.org/dns.froth.zone/dnscrypt)
 
 # DNSCrypt Go
 
@@ -27,7 +27,7 @@ Please note, that even though this tool can work as a server, it's purpose is me
 
 ### <a id="install"></a> How to install
 
-Download and unpack an archive for your platform from the [latest release](https://github.com/ameshkov/dnscrypt/releases).
+Download and unpack an archive for your platform from the [latest release](https://github.com/SamTherapy/dnscrypt/releases).
 
 Homebrew:
 ```
@@ -136,7 +136,7 @@ You can also send a DNSCrypt request using a command that does not require stamp
 
 ```go
 import (
-    "github.com/ameshkov/dnscrypt/v2"
+    "dns.froth.zone/dnscrypt"
 )
 
 // AdGuard DNS stamp
@@ -171,7 +171,7 @@ reply, err := c.Exchange(&req, resolverInfo)
 
 ```go
 import (
-    "github.com/ameshkov/dnscrypt/v2"
+    "dns.froth.zone/dnscrypt"
 )
 
 // Prepare the test DNSCrypt server config

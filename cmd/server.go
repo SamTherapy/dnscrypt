@@ -6,8 +6,8 @@ import (
 	"os/signal"
 	"syscall"
 
+	"dns.froth.zone/dnscrypt"
 	"github.com/AdguardTeam/golibs/log"
-	"github.com/ameshkov/dnscrypt/v2"
 	"github.com/miekg/dns"
 	"gopkg.in/yaml.v3"
 )
