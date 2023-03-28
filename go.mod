@@ -1,6 +1,6 @@
 module dns.froth.zone/dnscrypt
 
-go 1.18
+go 1.19
 
 require (
 	github.com/AdguardTeam/golibs v0.12.0
