@@ -5,7 +5,7 @@ import (
 	"errors"
 
 	"golang.org/x/crypto/chacha20"
-	"golang.org/x/crypto/poly1305"
+	"golang.org/x/crypto/poly1305" //nolint:staticcheck // This is used as the building block on purpose
 )
 
 const (
